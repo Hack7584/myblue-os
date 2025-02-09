@@ -27,7 +27,6 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-software
-      - f41-backgrounds
 
   - type: default-flatpaks
     notify: true

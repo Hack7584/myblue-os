@@ -11,11 +11,9 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   
   - type: rpm-ostree
-    install:
-      - generic-logos
-      - generic-release
-
     remove:
+      - fedora-release-silverblue
+      - fedora-logos
       - firefox
       - firefox-langpacks
       - gnome-tour
@@ -26,6 +24,10 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-software
+
+    install:
+      - generic-logos
+      - generic-release
 
   - type: default-flatpaks
     notify: true

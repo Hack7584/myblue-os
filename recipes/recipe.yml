@@ -12,7 +12,6 @@ modules:
   
   - type: rpm-ostree
     install:
-      - steam
       - generic-logos
       - generic-release
 

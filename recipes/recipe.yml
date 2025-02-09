@@ -31,10 +31,11 @@ modules:
 
   - type: default-flatpaks
     notify: true
-    system: https://dl.flathub.org/repo/flathub.flatpakrepo
-    repo-name: flathub
-    repo-title: "Flathub (system-wide)"
-    install:
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)"
+      install:
       - org.mozilla.firefox
       - io.github.flattool.Warehouse
 
